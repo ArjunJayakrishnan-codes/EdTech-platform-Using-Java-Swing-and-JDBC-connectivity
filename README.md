@@ -62,14 +62,16 @@ This project is a simple Java-based desktop application using `Swing` for the GU
 2. **Update Database Credentials**
 
 In the LoginSignupApp.java file, update the following variables with your MySQL username and password:
+```java
 static final String USER = "root"; // Your MySQL username
 static final String PASS = "YourPassword"; // Your MySQL password
-
+```
 3. **Images**
 
 Update the paths for the background images and course thumbnails in the BackgroundPanel and createCoursePanel methods. Make sure to use the correct file paths for your local system:
+```java
 BackgroundPanel loginPanel = new BackgroundPanel("C:\\path_to_your_image\\background.jpg");
-
+```
 **Running the Application**
 1.Compile and run the LoginSignupApp.java file from your IDE or the command line.
 2.The Login screen will appear, allowing users to log in or sign up.
@@ -77,6 +79,7 @@ BackgroundPanel loginPanel = new BackgroundPanel("C:\\path_to_your_image\\backgr
 4.The user profile page displays user details and enrolled courses.
 
 **Folder Structure**
+```graphql
 ├── src
 │   ├── LoginSignupApp.java   # Main application file
 │   └── BackgroundPanel.java  # Custom JPanel for background images
@@ -85,7 +88,7 @@ BackgroundPanel loginPanel = new BackgroundPanel("C:\\path_to_your_image\\backgr
 │   └── course_thumbnails     # Directory for course images
 ├── README.md
 └── mysql-connector-java-x.x.x.jar  # JDBC driver for MySQL
-
+```
 **How to Use**
 1.Sign Up: If you're a new user, click on the "Sign Up" button. Fill in your details (name, Gmail ID, password), and submit the form to create a new account.
 2.Login: If you have an account, enter your Gmail ID and password, then click "Login".
